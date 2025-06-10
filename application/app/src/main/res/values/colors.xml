@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6858E4</color>
-    <color name="colorPrimaryDark">#25184E</color>
+    <!-- Modernized primary colors -->
+    <color name="colorPrimary">#6750A4</color>
+    <color name="colorPrimaryDark">#4F378B</color>
 
     <!-- head_color is for top background color in AppInstallActivity, GameActivity, OffersActivity, VideoWatchActivity etc  -->
     <color name="head_color">#2E1F5E</color>
@@ -64,7 +65,7 @@
     <color name="darkTextColor">#020000</color>
     <!--colors for light mode-->
     <color name="contentTextColor">#020000</color>
-    <color name="primaryTextColor">#448AFF</color>
+    <color name="primaryTextColor">#6750A4</color>
     <color name="mred">#33097D</color>
     <color name="Gamezone">#192CA3</color>
     <color name="plback">#190A27</color>
@@ -191,7 +192,7 @@
 
 
 
-    <color name="colorAccent">#2F3553</color>
+    <color name="colorAccent">#D0BCFF</color>
     <color name="dark_blue">#272C45</color>
     <color name="prpl">#400756</color>
     <color name="colorSecondryDark">#5616A0</color>
