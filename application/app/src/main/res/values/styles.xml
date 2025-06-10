@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -56,7 +56,7 @@
         <item name="behavior_peekHeight">@dimen/top_sheet_modal_peek_height</item>
         <item name="behavior_hideable">true</item>
     </style>
-    <style name="Theme.MaterialComponents.Light.NoActionBar.FullScreen" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.MaterialComponents.Light.NoActionBar.FullScreen" parent="@style/Theme.Material3.DayNight.NoActionBar">
         <item name="windowNoTitle">true</item>
          <item name="windowActionBar">false</item>
         <item name="android:windowFullscreen">false</item>

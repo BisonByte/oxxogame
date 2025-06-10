@@ -10,7 +10,9 @@
 
 
     <!--- This is the background color -->
-    <solid android:color="@color/mred" />
+    <gradient android:type="linear" android:angle="270"
+        android:startColor="@color/colorPrimary"
+        android:endColor="@color/colorAccent" />
 
 
 
