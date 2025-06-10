@@ -54,7 +54,7 @@
             android:fontFamily="@font/regular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Skip Now"
+            android:text="@string/skip_now"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="15dp"/>
@@ -112,7 +112,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Get Started"
+            android:text="@string/get_started"
             android:textColor="@color/white"
             android:fontFamily="@font/bold"/>
 

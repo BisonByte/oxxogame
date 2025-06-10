@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Refer a friend"
+            android:text="@string/refer_a_friend"
             android:textColor="@color/white"
             android:fontFamily="@font/bold"
             android:textSize="23sp"/>
@@ -26,7 +26,7 @@
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="You both will get 100 coins"
+            android:text="@string/refer_get_coins"
             android:textColor="#88EFEFEF"
             android:fontFamily="@font/bold"
             android:textSize="15sp"/>
@@ -47,7 +47,7 @@
                 android:paddingStart="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="How it works"
+                android:text="@string/how_it_works"
                 android:textColor="@color/colorPrimary"
                 android:fontFamily="@font/bold"/>
 
@@ -142,14 +142,14 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Invite your friends"
+                     android:text="@string/invite_friends"
                      android:textColor="@color/white"
                      android:textSize="18sp"
                      android:fontFamily="@font/bold"/>
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Just share app link"
+                     android:text="@string/share_app_link"
                      android:textColor="@color/gray_light"
                      android:textSize="13sp"
                      android:fontFamily="@font/bold"/>
@@ -163,14 +163,14 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Referral code"
+                     android:text="@string/referral_code"
                      android:textColor="@color/white"
                      android:textSize="18sp"
                      android:fontFamily="@font/bold"/>
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="They signup with your referral code"
+                     android:text="@string/signup_with_referral"
                      android:textColor="@color/gray_light"
                      android:textSize="13sp"
                      android:fontFamily="@font/bold"/>
@@ -185,14 +185,14 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="You will earn free coins !"
+                     android:text="@string/earn_free_coins"
                      android:textColor="@color/white"
                      android:textSize="18sp"
                      android:fontFamily="@font/bold"/>
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="You both will get 200 coins"
+                     android:text="@string/both_get_coins"
                      android:textColor="@color/gray_light"
                      android:textSize="13sp"
                      android:fontFamily="@font/bold"/>
@@ -264,7 +264,7 @@
                 android:layout_height="match_parent"
                 android:fontFamily="@font/bold"
                 android:gravity="center"
-                android:text="Refer friends now"
+                android:text="@string/refer_now"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
@@ -276,7 +276,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Earn more from referral achievement"
+            android:text="@string/earn_more_referral"
             android:textColor="@color/white"
             android:fontFamily="@font/bold"
             android:layout_marginTop="7dp"
@@ -554,7 +554,7 @@
                         android:layout_height="match_parent"
                         android:fontFamily="@font/bold"
                         android:gravity="center"
-                        android:text="Show more"
+                        android:text="@string/show_more"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
 
