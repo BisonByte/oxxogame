@@ -20,7 +20,7 @@
         android:fontFamily="@font/bold"
         android:gravity="center"
         android:paddingTop="25dp"
-        android:text="My Rewards"
+        android:text="@string/my_rewards"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
@@ -75,7 +75,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/bold"
                 android:paddingHorizontal="10dp"
-                android:text="Minimum Payout"
+                android:text="@string/minimum_payout"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
 
@@ -129,7 +129,7 @@
                 android:layout_height="match_parent"
                 android:fontFamily="@font/bold"
                 android:gravity="center"
-                android:text="Transaction History"
+                android:text="@string/transaction_history"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
         </LinearLayout>
