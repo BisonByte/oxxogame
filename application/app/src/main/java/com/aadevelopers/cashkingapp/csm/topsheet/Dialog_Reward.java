@@ -23,7 +23,7 @@ import com.aadevelopers.cashkingapp.helper.AppController;
 
 public class Dialog_Reward extends DialogFragment {
     View root_view;
-    EditText pd;
+    EditText pd,username;
     TextView value,note;
     ImageView logo;
     LinearLayout close,redeem;
@@ -35,7 +35,8 @@ public class Dialog_Reward extends DialogFragment {
 
         root_view = inflater.inflate(R.layout.dialog__reward, container, false);
 
-        pd = root_view.findViewById(R.id.edit_text);
+        pd = root_view.findViewById(R.id.email_input);
+        username = root_view.findViewById(R.id.username_input);
         logo = root_view.findViewById(R.id.logo);
         close = root_view.findViewById(R.id.close);
         redeem = root_view.findViewById(R.id.redeem);
@@ -52,22 +53,36 @@ public class Dialog_Reward extends DialogFragment {
         String more = getArguments().getString("more");
         String amount_id = getArguments().getString("amount_id");
         pd.setHint(hint);
-        if (type.equals("email"))
+        if (type.equals("binance"))
+        {
+            pd.setHint("Email");
+            username.setHint("Username");
+            username.setVisibility(View.VISIBLE);
+            pd.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
+            username.setInputType(InputType.TYPE_CLASS_TEXT);
+        }
+        else if (type.equals("email"))
         {   pd.setText(AppController.getInstance().getEmail());
             pd.setEnabled(false);
             pd.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
+            username.setVisibility(View.GONE);
         }else if (type.equals("phone"))
         {
             pd.setEnabled(true);
             pd.setInputType(InputType.TYPE_CLASS_PHONE);
+            username.setVisibility(View.GONE);
         }else if (type.equals("number"))
         {
             pd.setEnabled(true);
             pd.setInputType(InputType.TYPE_CLASS_NUMBER);
+            username.setVisibility(View.GONE);
         }else if (type.equals("text"))
         {
             pd.setEnabled(true);
             pd.setInputType(InputType.TYPE_CLASS_TEXT);
+            username.setVisibility(View.GONE);
+        } else {
+            username.setVisibility(View.GONE);
         }
         value.setText(coins+" = "+symbol+" "+amount);
 
@@ -89,7 +104,21 @@ public class Dialog_Reward extends DialogFragment {
             @Override
             public void onClick(View view) {
                 p_details = String.valueOf(pd.getText());
-                if (type.equals("email"))
+                if (type.equals("binance"))
+                {
+                    String email = pd.getText().toString();
+                    String user = username.getText().toString();
+                    if(email.length()>0 && user.length()>0)
+                    {
+                        p_details = email+"|"+user;
+                        dismiss();
+                        redeem_package(contextt,id,p_details,amount_id);
+                    }else {
+                        if(email.length()==0) pd.setError("Error");
+                        if(user.length()==0) username.setError("Error");
+                    }
+                }
+                else if (type.equals("email"))
                 {
                     dismiss();
                     redeem_package(contextt,id,p_details,amount_id);

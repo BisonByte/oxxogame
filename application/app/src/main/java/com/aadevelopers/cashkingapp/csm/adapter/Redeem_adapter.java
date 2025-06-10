@@ -48,7 +48,13 @@ public class Redeem_adapter extends RecyclerView.Adapter<Redeem_adapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final Redeem_model model = historyList.get(position);
-        Glide.with(context).load(model.getImage())
+        Object imgSrc;
+        try {
+            imgSrc = Integer.parseInt(model.getImage());
+        } catch (Exception e) {
+            imgSrc = model.getImage();
+        }
+        Glide.with(context).load(imgSrc)
                 .apply(new RequestOptions().placeholder(R.mipmap.ic_launcher_round))
                 .into(holder.img);
         holder.amount.setText(model.getSymbol()+model.amount);
