@@ -390,7 +390,7 @@ public class Activity_Login extends AppCompatActivity {
 
         @Override
         public void onNothingSelected(AdapterView<?> arg0) {
-            // TODO Auto-generated method stub
+            spinner_code = "";
         }
 
     }
