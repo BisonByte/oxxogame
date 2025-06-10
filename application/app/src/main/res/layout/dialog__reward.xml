@@ -107,10 +107,24 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/edit_text"
+        android:id="@+id/email_input"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_below="@id/midle"
+        android:layout_marginHorizontal="55dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_text_back"
+        android:fontFamily="@font/bold"
+        android:paddingStart="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="#6FFFFFFF"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/email_input"
         android:layout_marginHorizontal="55dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/edit_text_back"
@@ -124,7 +138,7 @@
         android:id="@+id/bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edit_text"
+        android:layout_below="@id/username_input"
         android:layout_marginHorizontal="55dp"
         android:layout_marginTop="17dp">
 

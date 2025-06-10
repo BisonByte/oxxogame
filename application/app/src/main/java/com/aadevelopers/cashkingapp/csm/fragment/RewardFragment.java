@@ -75,7 +75,7 @@ public class RewardFragment extends Fragment {
 
         user_points(points);
 
-        getlist();
+        setupBinance();
         AdsManager.loadBannerAd(requireActivity(), root_view.findViewById(R.id.banner_ad_container));
         return root_view;
     }
@@ -155,6 +155,37 @@ public class RewardFragment extends Fragment {
             ContextExtensionKt.showLongToast(getContext(), e.getMessage());
             ShimmerExtensionKt.safelyHide(shimmer);
         }
+    }
+
+    private void setupBinance() {
+        reward_listt.clear();
+        try {
+            JSONArray arr = new JSONArray();
+            JSONObject ob = new JSONObject();
+            ob.put("id", 1);
+            ob.put("amount", "10");
+            ob.put("coins", "1000");
+            arr.put(ob);
+
+            Reward_model item = new Reward_model(
+                    "Binance",
+                    String.valueOf(R.drawable.binance_logo),
+                    "$",
+                    "Binance Email",
+                    "binance",
+                    1,
+                    "Provide your Binance email and username",
+                    0,
+                    arr.toString());
+            reward_listt.add(item);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        reward_adapter = new Reward_adapter(reward_listt, getActivity());
+        reward_list.setHasFixedSize(true);
+        reward_list.setLayoutManager(new LinearLayoutManager(getContext()));
+        reward_list.setAdapter(reward_adapter);
     }
 
 

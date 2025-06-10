@@ -46,7 +46,13 @@ public class Reward_adapter extends RecyclerView.Adapter<Reward_adapter.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final Reward_model model = historyList.get(position);
 
-        Glide.with(context).load(model.getImage())
+        Object imgSrc;
+        try {
+            imgSrc = Integer.parseInt(model.getImage());
+        } catch (Exception e) {
+            imgSrc = model.getImage();
+        }
+        Glide.with(context).load(imgSrc)
                 .apply(new RequestOptions().placeholder(R.mipmap.ic_launcher_round))
                 .into(holder.img);
         holder.title.setText(model.getName());
