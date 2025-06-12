@@ -1,6 +1,6 @@
 <resources>
     <!--App Name-->
-    <string name="app_name">Cash King</string>
+    <string name="app_name">BisonByte</string>
 
     <string name="next">Siguiente</string>
     <string name="skip">Omitir</string>
@@ -14,7 +14,7 @@
     <!--Welcome Slider Title-->
     <string name="title_activity_welcome">Pantalla principal</string>
     <string name="start">ENTENDIDO</string>
-    <string name="slide_1_desc">¡La mejor manera de ganar dinero con Cash King!</string>
+    <string name="slide_1_desc">¡La mejor manera de ganar dinero con BisonByte!</string>
     <string name="slide_2_desc">¡Gira la ruleta para ganar monedas!</string>
     <string name="slide_3_desc">¡Invita a tus amigos para ganar más monedas!</string>
     <string name="settings_account_id">account_id</string>
@@ -37,6 +37,7 @@
     <string name="privacy_policy" translatable="false">https://google.com</string>
     <string name="terms_of_service" translatable="false">https://google.com</string>
     <string name="contect_email" translatable="false">abc@mail.com</string>
+    <string name="developer_credit" translatable="false">Hecho por BisonByte</string>
     <!--profile strings end-->
 
     <!--login text-->
