@@ -380,7 +380,7 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `daily_b_points`, `invited_user_bonus`, `referral_bonus`, `daily_spins`, `games`, `refer_msg`, `OT_PUB`, `OT_APP_ID`, `OT_KEY`, `PF_ID`, `AG_WALLCODE`, `fb_ad_id`, `fb_ad_time`, `vpn`, `os_app_id`, `os_rest_api`, `unity_banner_id`, `applovin_banner_id`, `adcolony_banner_id`, `vungle_banner_id`, `banner_ad_type`, `interstital_ad_type`, `use_multiple_account`, `native_ad_type`, `applovin_interstital_id`, `unity_interstital_id`, `adcolony_interstital_id`, `vungle_interstital_id`, `admob_rewarded_id`, `vungle_rewarded_id`, `applovin_rewarded_id`, `applovin_native_id`, `unity_rewarded_id`, `adcolony_rewarded_id`, `spin_count`, `consoliads_app_signature`, `iron_source_app_key`, `yodo_app_key`, `chartboost_app_id`, `chartboost_app_signature`, `vungle_app_id`, `adcolony_app_id`, `native_count`, `unity_game_id`, `start_io_app_id`, `admob_app_id`, `spin_count_per_day`, `scratch_limit`, `scratch_count`, `daily_video_limit`, `scratch_count_beetween`, `rewarded_ad_type`, `is_apps_enabled`) VALUES
-(1, 20, 20, 30, 10, 10, 'Its Just Wow! The Cash King App is best way to play games and earn rewards.', '0', '0', '0', '', '0', '505', 1000, 1, '0', '0', 'banner', '0', '0', '0', 'chartboost', 'chartboost', 0, '', '0', 'interstitial', '0', '0', '0', '0', '0', '', 'rewardedVideo', '0', 2, '4ae0855a63', '0', '', '0', '0', '0', '0', 0, '0', '0', '', 2, 10, 2, 2, '10-20', 'chartboost', 'true');
+(1, 20, 20, 30, 10, 10, 'Its Just Wow! The BisonByte App is best way to play games and earn rewards.', '0', '0', '0', '', '0', '505', 1000, 1, '0', '0', 'banner', '0', '0', '0', 'chartboost', 'chartboost', 0, '', '0', 'interstitial', '0', '0', '0', '0', '0', '', 'rewardedVideo', '0', 2, '4ae0855a63', '0', '', '0', '0', '0', '0', 0, '0', '0', '', 2, 10, 2, 2, '10-20', 'chartboost', 'true');
 
 -- --------------------------------------------------------
 
@@ -407,7 +407,7 @@ CREATE TABLE `tbl_admin` (
 --
 
 INSERT INTO `tbl_admin` (`id`, `name`, `username`, `password`, `email`, `status`, `payment_add`, `company`, `profile`, `entry_date`, `update_date`) VALUES
-(3, 'AA Developers', 'admin', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'aadevelopers963@gmail.com', 0, '0', 'AADevelopers', 'https://cash.hdcbbackground.com/img/profile.png103700665', '0000-00-00', '2020-04-22');
+(3, 'BisonByte', 'admin', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'aadevelopers963@gmail.com', 0, '0', 'BisonByte', 'https://cash.hdcbbackground.com/img/profile.png103700665', '0000-00-00', '2020-04-22');
 
 -- --------------------------------------------------------
 
@@ -474,7 +474,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `username`, `password`, `email`, `fcm_id`, `points`, `refer`, `total_ref`, `task`, `ip_address`, `status`, `refer_status`, `social_status`, `date_registered`, `phone`, `image`, `badge`, `device`, `streak`, `long_streak`) VALUES
 (61, 'Maza Tv', 'mazatvapp', '', 'mazatvapp@gmail.com', 'FirebaseInstanceId.getInstance().getToken()', 21, 'RU2N16CN', 0, 0, '', 0, 0, '', '2022-11-08 16:06:20', '0000000000', 'https://lh3.googleusercontent.com/a/ALm5wu3LRxdIHTpWs3lccDO-IV6LoJ2Q8vMqs4kpDUPr=s96-c', 1, '4f273021d446fa90', 0, 0),
 (62, 'Big Loot', 'freecbbackground', '', 'freecbbackground@gmail.com', 'FirebaseInstanceId.getInstance().getToken()', 10, 'BCCYOXU5', 0, 0, '', 0, 0, '', '2022-11-08 16:25:14', '0000000000', 'https://lh3.googleusercontent.com/a/ALm5wu32QFhf3K9mflU2rVTxTRBTAdAZmBnVZRBdbIZ-=s96-c', 1, 'acc39dfacdfc58f9', 0, 0),
-(64, 'AA Developers', 'aadevelopers963', '', 'aadevelopers963@gmail.com', 'FirebaseInstanceId.getInstance().getToken()', 575, 'BKVN078I', 0, 0, '', 0, 0, '', '2022-12-19 17:57:03', '0000000000', 'https://lh3.googleusercontent.com/a/ALm5wu0XmzlBP6VkUxUYoeHMg9E9jOFoYoSUrcnyj2Y=s96-c', 0, '53f54b3596ff80d9', 0, 0),
+(64, 'BisonByte', 'aadevelopers963', '', 'aadevelopers963@gmail.com', 'FirebaseInstanceId.getInstance().getToken()', 575, 'BKVN078I', 0, 0, '', 0, 0, '', '2022-12-19 17:57:03', '0000000000', 'https://lh3.googleusercontent.com/a/ALm5wu0XmzlBP6VkUxUYoeHMg9E9jOFoYoSUrcnyj2Y=s96-c', 0, '53f54b3596ff80d9', 0, 0),
 (65, 'tested', 'tested', '123456', 'tested@gmail.com', 'FirebaseInstanceId.getInstance().getToken()', 100, 'J2FEMV5Y', 0, 0, '', 0, 0, '0', '2023-08-21 21:56:02', '0000000000', '', 0, '12cf1026a9de51ef', 0, 0),
 (66, 'Aadesh Dhiman', 'technicalaadesh', '', 'technicalaadesh@gmail.com', 'FirebaseInstanceId.getInstance().getToken()', 0, '381KSCWS', 0, 0, '', 0, 0, '0', '2023-08-23 05:49:51', '0000000000', 'https://lh3.googleusercontent.com/a/AGNmyxYVlpSP9WXLi5ule2vS5TmqjOAk6Zqj4y4wwO5-Ow=s96-c', 0, '0d4fd331e6e116b3', 0, 0);
 
